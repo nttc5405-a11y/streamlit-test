@@ -8,11 +8,11 @@ st.title("📍 住警器裝設地理分佈分析")
 
 # 1. 建立連接
 conn = st.connection("gsheets", type=GSheetsConnection)
-URL = "https://docs.google.com/spreadsheets/d/1NCGE9kFRh85HJoVlsZhtA4PDc68TCTGtEG9v4TmFY0A/edit?gid=1508388728#gid=1508388728"
+URL = "https://docs.google.com/spreadsheets/d/15jBjgp8UJjCTUakPzUI5WKv6GwAviEs_SNaImvP5n5c/edit?gid=0#gid=0"
 
 try:
     # 讀取 test0225 分頁
-    df = conn.read(spreadsheet=URL, worksheet="test0225")
+    df = conn.read(spreadsheet=URL, worksheet="工作表1")
     
     # --- 修正欄位名稱 ---
     # 根據你的檔案，我們定義正確的對應
